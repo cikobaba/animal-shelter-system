@@ -1,47 +1,13 @@
-# Practical Task: Animal Shelter Console App
+Animal Shelter System
 
-Starter project for M3A practical task: Create a simple Java console application for managing animals in an animal shelter.
+Accenture Java Bootcamp - M3A Practical Task
 
-## Task
-Complete all of the 'TODO' portions of the code. Finished application should support:
-- Adding a new animal
-- Listing all animals
-- Searching animals by species
-- Marking an animal as adopted
-- Displaying only available animals
+Additional Features
 
-## OOP Requirements
-- Class anatomy: fields, constructors, methods
-- Object isntantiation and usage
-- Constructor overloading
-- Immutable class usage (AnimalId)
-- Lombok usage for reducing boilerplate
-- A basic sealed class hierarchy
-- Generic (Shelter<T>) class that stores animals
+Sort animals by age (youngest to oldest)
 
-## Project Structure
-``` text
-src
-├── Main.java
-├── menu/
-│   └── ConsoleMenu.java
-│   └── MenuOption.java
-├── model/
-│   ├── Animal.java
-│   ├── Dog.java
-│   ├── Cat.java
-│   ├── Bird.java
-│   ├── AnimalId.java
-│   └── AdoptionStatus.java
-└── shelter/
-    └── Shelter.java
-```
-## Stretch goals
-- Add a new animal type without modifying existing functionality
-- Allow sorting animals by age or name
-- Validate user input (no empty names, age cannot be negative etc.)
-- Create a generic utility class for searching and filtering collections (Average animal age, Oldest animal, Number of animals of each species etc.)
-- Add adoption history that tracks:
-    - Animal
-    - Adoption Date
-    - Adopter Name
+Input validation for empty names, negative ages, and invalid inputs
+
+Prevent adopting an already adopted animal
+
+Handle invalid animal IDs during adoption
